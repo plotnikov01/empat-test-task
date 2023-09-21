@@ -1,0 +1,35 @@
+@import '../../../styles/';
+
+.sidebar {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  &__button {
+    width: 76px;
+    height: 40px;
+    margin: 8px auto;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__reset {
+    cursor: pointer;
+    margin-top: 32px;
+    color: $color-blue-secondary;
+
+    @include mobile {
+      order: 1;
+      margin-top: 5px;
+    }
+  }
+}
+.hidden {
+  display: none;
+}

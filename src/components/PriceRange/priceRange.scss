@@ -1,0 +1,73 @@
+@import '../../styles/';
+
+.pricerange {
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    order: 2;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__apply {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    border-top: 1px solid $color-gray-primary;
+
+    @include mobile {
+      border: none;
+    }
+
+    &--button {
+      display: none;
+
+      @include mobile {
+        color: $color-blue-secondary;
+        font-weight: 500;
+        display: block;
+      }
+    }
+  }
+  &__inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &--wrapper {
+      width: 100%;
+
+      .ant-input-number {
+        width: 90%;
+      }
+    }
+
+    &--label {
+      padding: 10px 0;
+    }
+  }
+  .custom-slider {
+    .ant-slider-track {
+      background-color: $color-blue-secondary; // Active track color
+    }
+
+    .ant-slider-rail {
+      background-color: $color-blue-tertiary; // Inactive track color
+    }
+
+    .ant-slider-handle {
+      width: 20px;
+      height: 20px;
+      border: 1px solid $color-blue-tertiary; // Handle styles
+    }
+  }
+
+  .label {
+    text-align: center;
+    margin-top: 4px;
+  }
+}

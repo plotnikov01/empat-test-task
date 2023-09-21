@@ -1,0 +1,47 @@
+@import '../../styles/';
+
+.brandlist {
+  @include mobile {
+    margin-top: 16px;
+    order: 3;
+  }
+  h2 {
+    padding: 14px 0;
+    font-weight: 600;
+    border-top: 1px solid $color-gray-primary;
+  }
+
+  ul {
+    margin-bottom: 18px;
+
+    @include mobile {
+      order: 4;
+    }
+    li {
+      margin: 8px 0;
+
+      p {
+        font-size: 16px;
+        margin-left: 5px;
+      }
+
+      .ant-checkbox-inner {
+        background-color: transparent;
+        border: 2px solid $color-gray-secondary;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Style for the checked (active) state */
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #1677ff;
+        border: 2px solid #1677ff;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

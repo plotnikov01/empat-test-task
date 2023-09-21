@@ -1,0 +1,27 @@
+@import '../../styles/';
+
+.header {
+  padding: 16px;
+  width: 100%;
+  background-color: $color-white;
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+
+  &__path {
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 16px;
+  }
+
+  &__menu {
+    display: flex;
+    margin-top: 28px;
+  }
+}

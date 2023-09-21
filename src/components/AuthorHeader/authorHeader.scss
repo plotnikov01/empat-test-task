@@ -1,0 +1,36 @@
+@import '../../styles/';
+
+.author {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 86px;
+  background-color: $color-white;
+
+  @include mobile {
+    display: none;
+  }
+
+  p {
+    margin-left: 100px;
+    color: #0d6efd;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    span {
+      color: #8cb7f5;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: -0.2px;
+    }
+  }
+}
